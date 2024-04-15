@@ -1,0 +1,12 @@
+@mixin screen ($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin container() {
+    width: 100%;
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 0 0.75rem;
+}

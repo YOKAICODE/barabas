@@ -1,0 +1,40 @@
+// @import 'abstracts/variables';
+// @import 'abstracts/mixins';
+// @import 'abstracts/colors';
+// @import 'vendors/bootstrap';
+
+// @import "base/fonts";
+@import 'base/remixicons';
+// @import 'base/reset';
+// @import 'base/container';
+// @import 'base/custom-reset';
+
+// @import 'layout/intro';
+// @import 'layout/navigation';
+// @import 'layout/grid';
+// @import 'layout/header';
+// @import 'layout/footer';
+// @import 'layout/sidebar';
+// @import 'layout/forms';
+
+// # Hamburger menu
+// # https://jonsuh.com/hamburgers/
+// $hamburger-padding-x           : 10px !default;
+// $hamburger-padding-y           : 10px !default;
+// $hamburger-layer-width         : 30px !default;
+// $hamburger-layer-height        : 2px !default;
+// $hamburger-layer-color         : #fff !default;
+// @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
+// SWIPER
+// @import 'components/swiper';
+// @import 'components/buttons';
+// @import 'components/carousel';
+// @import 'components/cover';
+// @import 'components/dropdown';
+
+// @import 'pages/home';
+// @import 'pages/contact';
+
+// @import 'themes/theme';
+// @import 'themes/admin';
