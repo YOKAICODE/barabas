@@ -8,7 +8,7 @@
     "dev": "gulp",
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
-    "test": "gulp test"
+    "test":"gulp test"
   },
   "keywords": [],
   "license": "ISC",
@@ -17,11 +17,10 @@
     "autoprefixer": "^10.4.19",
     "browser-sync": "^3.0.2",
     "del": "^7.1.0",
-    "gulp": "^5.0.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
-    "gulp-copy": "^4.0.1",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-html-beautify": "^1.0.1",
     "gulp-htmlnano": "^0.1.0",
@@ -48,13 +47,13 @@
     "postcss-import": "^16.1.0",
     "posthtml-include": "^2.0.1",
     "remixicon": "^4.2.0",
-    "sass": "^1.72.0",
+    "sass": "^1.75.0",
     "tailwindcss": "^3.4.3",
     "webp-converter": "2.2.3",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "gulp-cli": "^3.0.0",
+    "gulp-cli": "^2.3.0",
     "merge-stream": "^2.0.0"
   }
 }

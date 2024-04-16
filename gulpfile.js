@@ -15,7 +15,7 @@ global.app = {
 };
 
 // Импорт задач
-import { copyFonts, copyFavicons, copyIcons } from "./gulp/tasks/copy.js";
+import { copyFiles, copyFavicons ,copyIcons } from "./gulp/tasks/copy.js";
 import { reset } from "./gulp/tasks/reset.js";
 import { html } from "./gulp/tasks/html.js";
 import { server } from "./gulp/tasks/server.js";
@@ -28,7 +28,7 @@ import { zip } from "./gulp/tasks/zip.js";
 
 // Наблюдатель за изменением в файлах
 const watcher = () => {
-  gulp.watch(path.watch.fonts, copyFonts);
+  // gulp.watch(path.watch.files, copyFiles);
   gulp.watch(path.watch.html, gulp.parallel(html, mergeStyles));
   gulp.watch(path.watch.scss, mergeStyles);
   gulp.watch(path.watch.js, gulp.parallel(js, mergeStyles));
@@ -37,12 +37,12 @@ const watcher = () => {
 
 const mainTasks = gulp.parallel(
   copyFavicons,
-  copyFonts,
   copyIcons,
+  copyFiles,
   html,
   js,
-  mergeStyles
-  // images
+  mergeStyles,
+  images
 );
 
 // Построение сценариев выполнения задач

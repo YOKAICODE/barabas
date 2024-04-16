@@ -72,3 +72,16 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "remixicon";
+    src: url("../assets/icons/remixicon.eot"); /* IE9*/
+    src:
+        url("../assets/icons/remixicon.eot#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("../assets/icons/remixicon.woff2") format("woff2"),
+        url("../assets/icons/remixicon.woff") format("woff"),
+        url("../assets/icons/remixicon.ttf") format("truetype"),
+        /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url("../assets/icons/remixicon.svg#remixicon")
+            format("svg"); /* iOS 4.1- */
+    font-display: swap;
+}

@@ -4,7 +4,6 @@ import notify from "gulp-notify";
 import browsersync from "browser-sync";
 import newer from "gulp-newer";
 import ifPlugin from "gulp-if";
-import gulpCopy from "gulp-copy";
 
 const plugins = {
   replace: replace,
@@ -13,7 +12,6 @@ const plugins = {
   browsersync: browsersync,
   newer: newer,
   if: ifPlugin,
-  copy: gulpCopy,
 };
 
 export {plugins};
