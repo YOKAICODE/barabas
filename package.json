@@ -17,7 +17,7 @@
     "autoprefixer": "^10.4.19",
     "browser-sync": "^3.0.2",
     "del": "^7.1.0",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
@@ -53,7 +53,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "gulp-cli": "^2.3.0",
+    "gulp-cli": "^3.0.0",
     "merge-stream": "^2.0.0"
   }
 }

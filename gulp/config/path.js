@@ -12,7 +12,8 @@ const path = {
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
     svg: `${srcFolder}/img/**/*.svg`,
     scss: `${srcFolder}/scss/style.scss`,
-    html: [`${srcFolder}/**/*.html`, `!${srcFolder}/html/**/*.*`],
+    html: [`${srcFolder}/**/*.html`,`!${srcFolder}/html/**/*.*`],
+    htmlPurgeCSS:[`${srcFolder}/**/*.html`],
     files: [
       `${srcFolder}/assets/**/*.*`,
       `!${srcFolder}/img/**/*.*`,
