@@ -44,6 +44,7 @@ const path = {
     html: `${srcFolder}/**/*.html`,
     files: `${srcFolder}/assets/**/*.*`,
   },
+  postHtmlRoot: `${srcFolder}/html`,
   clean: buildFolder,
   buildFolder: buildFolder,
   srcFolder: srcFolder,

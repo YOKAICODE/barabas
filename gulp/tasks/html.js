@@ -17,7 +17,7 @@ const html = () => {
       )
     )
     .pipe(
-      postHtml([postHtmlInclude({encoding: "utf8", root: app.path.srcFolder})])
+      postHtml([postHtmlInclude({encoding: "utf8", root: app.path.postHtmlRoot})])
     )
     .pipe(app.plugins.replace(/@img\//g, "img/"))
     .pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
