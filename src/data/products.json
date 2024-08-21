@@ -1,0 +1,12 @@
+{
+    "products":[
+        {
+            "name":"Alex",
+            "description":"lorem 123"
+        },
+        {
+            "name":"Elena",
+            "description":"lorem 456"
+        }
+    ]
+}

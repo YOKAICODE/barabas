@@ -1,9 +1,13 @@
 import postHtml from "gulp-posthtml";
 import postHtmlInclude from "posthtml-include";
+import postHtmlExpression from "posthtml-expressions";
 import webpHtmlNosvg from "gulp-webp-html-nosvg";
 import versionNumber from "gulp-version-number";
 import beautify from "gulp-html-beautify";
 import htmlnano from "gulp-htmlnano";
+
+// Import Data Json
+import productsData from "../../src/data/products.json" assert { type: "json" };
 
 const html = () => {
   return app.gulp
@@ -17,7 +21,14 @@ const html = () => {
       )
     )
     .pipe(
-      postHtml([postHtmlInclude({encoding: "utf8", root: app.path.postHtmlRoot})])
+      postHtml([
+        postHtmlInclude({ encoding: "utf8", root: app.path.postHtmlRoot }),
+        postHtmlExpression({
+          locals: {
+            products: productsData.products,
+          },
+        }),
+      ])
     )
     .pipe(app.plugins.replace(/@img\//g, "img/"))
     .pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
@@ -60,4 +71,4 @@ const html = () => {
     .pipe(app.plugins.browsersync.stream());
 };
 
-export {html};
+export { html };

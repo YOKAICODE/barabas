@@ -40,6 +40,11 @@
           <i class="ri-building-2-fill text-5xl "></i>
           <i class="ri-home-2-fill w-5 h-6"></i>
         </div>
+        <ul>
+          <each loop="product, index in products">
+            <li>{{product.name}} | {{product.description}}</li>
+          </each>
+        </ul>
       </main>
 
       <footer>

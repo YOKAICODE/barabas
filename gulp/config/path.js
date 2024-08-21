@@ -17,12 +17,14 @@ const path = {
     files: [
       `${srcFolder}/assets/**/*.*`,
       `!${srcFolder}/img/**/*.*`,
+      `!${srcFolder}/data/**/*.*`,
       `!${srcFolder}/assets/favicon/*.*`,
       `${srcFolder}/assets/icons/*.*`,
     ],
     tailwindcss: `${srcFolder}/tailwindcss/tailwind.css`,
     favicons: `${srcFolder}/assets/favicon/*.*`,
     icons: `${srcFolder}/assets/icons/*.*`,
+    postHtmlData: `!${srcFolder}/data`,
   },
   build: {
     root: `${buildFolder}/`,
