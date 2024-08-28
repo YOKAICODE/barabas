@@ -7,7 +7,7 @@ import beautify from "gulp-html-beautify";
 import htmlnano from "gulp-htmlnano";
 
 // Import Data Json
-import dataJson from "../../src/data/price.json" assert { type: "json" };
+import dataJson from "../../src/data/data.json" assert { type: "json" };
 
 const html = () => {
   return app.gulp
@@ -31,6 +31,7 @@ const html = () => {
             topSale: dataJson.top.sale,
             premiumPrice: dataJson.premium.price,
             premiumSale: dataJson.premium.sale,
+            cosmetic: dataJson.cosmetic,
           },
         }),
       ])

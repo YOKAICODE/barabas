@@ -1,3 +1,7 @@
+:root{
+    --swiper-navigation-color: #fff;
+}
+
 // @import 'abstracts/variables';
 // @import 'abstracts/mixins';
 // @import 'abstracts/colors';
@@ -5,7 +9,7 @@
 
 @import "base/fonts";
 @import "base/remixicons";
-@import 'base/reset';
+@import "base/reset";
 // @import 'base/container';
 // @import 'base/custom-reset';
 
@@ -21,10 +25,29 @@
 // # https://jonsuh.com/hamburgers/
 // @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
 
+// @import "../../node_modules/swiper/swiper-vars.scss";
+@import "../../node_modules/swiper/swiper";
+@import "../../node_modules/swiper/modules/scrollbar.scss";
+
+@import "../../node_modules/swiper/modules/navigation.scss";
+@import "../../node_modules/swiper/modules/pagination.scss";
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 0px);
+    right: auto;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 0px);
+    left: auto;
+}
+
 // SWIPER
+// @import 'vendors/swiper';
 // @import 'components/swiper';
-@import 'components/burger';
-@import 'components/tab';
+@import "components/burger";
+@import "components/tab";
 // @import 'components/buttons';
 // @import 'components/carousel';
 // @import 'components/cover';
@@ -35,5 +58,3 @@
 
 // @import 'themes/theme';
 // @import 'themes/admin';
-
-

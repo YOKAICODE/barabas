@@ -28,7 +28,7 @@ const scss = () => {
     .pipe(app.plugins.replace(/@img\//g, "../img/"))
     .pipe(
       purgeCss({
-        content: [`${app.path.src.htmlPurgeCSS}`, `${app.path.src.js}`],
+        content: [`${app.path.src.htmlPurgeCSS}`, `${app.path.watch.js}`],
         defaultExtractor: (content) => content.match(/[A-z0-9-:\/\.]+/g) || [],
       })
     )

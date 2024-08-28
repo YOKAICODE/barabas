@@ -36,11 +36,9 @@
 .burger.is-active {
     .burger__line {
         background: transparent;
-
         &:before {
             transform: rotate(45deg) translate(5px, 6px);
         }
-
         &:after {
             transform: rotate(-45deg) translate(5px, -6px);
         }

@@ -6,9 +6,32 @@
   html {
     scroll-behavior: smooth;
   }
+
+  h1 {
+    @apply font-druk text-xl lg:text-3xl uppercase;
+  }
+
+  h2 {
+    @apply font-druk uppercase text-xl lg:text-3xl;
+  }
+
+  p {
+    @apply text-lg lg:text-2xl uppercase;
+  }
+
+  ul,li > span {
+    @apply text-lg lg:text-2xl uppercase;
+  }
+
+  span {
+    @apply text-xl;
+  }
 }
 
 @layer components {
+  .link-cosmetic {
+    @apply bg-white text-black px-5 py-2.5 flex items-center justify-between hover:bg-black hover:text-white border text-xl;
+  }
 }
 
 @layer utilities {

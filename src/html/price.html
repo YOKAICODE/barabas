@@ -1,10 +1,10 @@
 <section class="py-5">
-    <div class="container flex flex-col items-center space-y-5">
-        <div class="font-druk uppercase text-xl lg:text-3xl text-center">
+    <div class="container flex flex-col items-center space-y-5 max-w-screen-xl">
+        <div class="text-center">
             <h2>Наш прайс-лист</h2>
             <p>Ульяновск</p>
         </div>
-        <div class="tab-wrapper max-w-3xl w-full" id="tabPrice">
+        <div class="tab-wrapper w-full" id="tabPrice">
             <div class="tab-header">
                 <button class="tab-btn text-lg lg:text-2xl --active" data-tab="0">Барбер</button>
                 <button class="tab-btn text-lg lg:text-2xl" data-tab="1">Топ-барбер</button>
@@ -12,7 +12,7 @@
             </div>
             <div class="tab-container">
                 <div class="tab-content --active" data-tab-content="0">
-                    <ul class="mt-5 uppercase text-xl lg:text-2xl">
+                    <ul class="mt-5">
                         <each loop="item, index in barberPrice">
                             <li class="flex items-center justify-between">
                                 <span>{{item.name}}</span>
@@ -29,7 +29,7 @@
                     </ul>
                 </div>
                 <div class="tab-content" data-tab-content="1">
-                    <ul class="mt-5 uppercase text-xl lg:text-2xl">
+                    <ul class="mt-5">
                         <each loop="item, index in topPrice">
                             <li class="flex items-center justify-between">
                                 <span>{{item.name}}</span>
@@ -46,7 +46,7 @@
                     </ul>
                 </div>
                 <div class="tab-content" data-tab-content="2">
-                    <ul class="mt-5 uppercase text-xl lg:text-2xl">
+                    <ul class="mt-5">
                         <each loop="item, index in premiumPrice">
                             <li class="flex items-center justify-between">
                                 <span>{{item.name}}</span>
