@@ -1,0 +1,69 @@
+<section class="py-5">
+    <div class="container flex flex-col items-center space-y-5">
+        <div class="font-druk uppercase text-xl lg:text-3xl text-center">
+            <h2>Наш прайс-лист</h2>
+            <p>Ульяновск</p>
+        </div>
+        <div class="tab-wrapper max-w-3xl w-full" id="tabPrice">
+            <div class="tab-header">
+                <button class="tab-btn text-lg lg:text-2xl --active" data-tab="0">Барбер</button>
+                <button class="tab-btn text-lg lg:text-2xl" data-tab="1">Топ-барбер</button>
+                <button class="tab-btn text-lg lg:text-2xl" data-tab="2">Премиум-барбер</button>
+            </div>
+            <div class="tab-container">
+                <div class="tab-content --active" data-tab-content="0">
+                    <ul class="mt-5 uppercase text-xl lg:text-2xl">
+                        <each loop="item, index in barberPrice">
+                            <li class="flex items-center justify-between">
+                                <span>{{item.name}}</span>
+                                <span>{{item.price}}</span>
+                            </li>
+                        </each>
+                        <li class="my-3"><p class="text-2xl lg:text-3xl text-center">Акции</p></li>
+                        <each loop="item, index in barberSale">
+                            <li class="flex items-center justify-between">
+                                <span>{{item.name}}</span>
+                                <span>{{item.price}}</span>
+                            </li>
+                        </each>
+                    </ul>
+                </div>
+                <div class="tab-content" data-tab-content="1">
+                    <ul class="mt-5 uppercase text-xl lg:text-2xl">
+                        <each loop="item, index in topPrice">
+                            <li class="flex items-center justify-between">
+                                <span>{{item.name}}</span>
+                                <span>{{item.price}}</span>
+                            </li>
+                        </each>
+                        <li class="my-3"><p class="text-2xl lg:text-3xl text-center">Акции</p></li>
+                        <each loop="item, index in topSale">
+                            <li class="flex items-center justify-between">
+                                <span>{{item.name}}</span>
+                                <span>{{item.price}}</span>
+                            </li>
+                        </each>
+                    </ul>
+                </div>
+                <div class="tab-content" data-tab-content="2">
+                    <ul class="mt-5 uppercase text-xl lg:text-2xl">
+                        <each loop="item, index in premiumPrice">
+                            <li class="flex items-center justify-between">
+                                <span>{{item.name}}</span>
+                                <span>{{item.price}}</span>
+                            </li>
+                        </each>
+                        <li class="my-3"><p class="text-2xl lg:text-3xl text-center">Акции</p></li>
+                        <each loop="item, index in premiumSale">
+                            <li class="flex items-center justify-between">
+                                <span>{{item.name}}</span>
+                                <span>{{item.price}}</span>
+                            </li>
+                        </each>
+                    </ul>
+                </div>
+                <p>* Цены в филиалах могут отличаться</p>
+            </div>
+        </div>
+    </div>
+</section>

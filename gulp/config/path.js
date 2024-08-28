@@ -8,8 +8,8 @@ const srcFolder = "./src";
 
 const path = {
   src: {
-    js: `${srcFolder}/js/**/*.js`,
-    images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
+    js: `${srcFolder}/js/app.js`,
+    images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg}`,
     svg: `${srcFolder}/img/**/*.svg`,
     scss: `${srcFolder}/scss/style.scss`,
     html: [`${srcFolder}/**/*.html`, `!${srcFolder}/html/**/*.*`],

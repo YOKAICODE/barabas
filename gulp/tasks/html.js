@@ -7,7 +7,7 @@ import beautify from "gulp-html-beautify";
 import htmlnano from "gulp-htmlnano";
 
 // Import Data Json
-import productsData from "../../src/data/products.json" assert { type: "json" };
+import dataJson from "../../src/data/price.json" assert { type: "json" };
 
 const html = () => {
   return app.gulp
@@ -25,7 +25,12 @@ const html = () => {
         postHtmlInclude({ encoding: "utf8", root: app.path.postHtmlRoot }),
         postHtmlExpression({
           locals: {
-            products: productsData.products,
+            barberPrice: dataJson.barber.price,
+            barberSale: dataJson.barber.sale,
+            topPrice: dataJson.top.price,
+            topSale: dataJson.top.sale,
+            premiumPrice: dataJson.premium.price,
+            premiumSale: dataJson.premium.sale,
           },
         }),
       ])

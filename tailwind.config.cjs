@@ -16,7 +16,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        sans: ["DIN Condensed", ...defaultTheme.fontFamily.sans],
+        druk: ["Druk Text Wide Cyr", ...defaultTheme.fontFamily.sans],
+        inter: ["Inter", ...defaultTheme.fontFamily.sans],
       },
     },
   },

@@ -1,55 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <!-- Lang -->
+<!-- Lang -->
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
-    <!-- Meta Tag's -->
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <!-- Styles connect -->
-    <link rel="stylesheet" href="css/style.min.css" />
-    <!-- JavaScript connect -->
-    <script src="js/app.min.js" type="module" defer></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Title</title>
+  <!-- Meta Tag's -->
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <!-- Styles connect -->
+  <link rel="stylesheet" href="css/style.min.css" />
+  <!-- JavaScript connect -->
+  <script src="js/app.min.js" type="module" defer></script>
+</head>
 
-  <body>
-    <!-- App Container -->
-    <div class="min-h-screen flex flex-col">
-      <!-- <include src="html/header.html"></include> -->
+<body class="bg-black text-white">
+  <!-- App Container -->
+  <div class="min-h-screen flex flex-col">
+    <include src="header.html"></include>
 
-      <main class="grow">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ex
-          vitae, id quod consequatur praesentium perspiciatis voluptatem culpa
-          ipsa nesciunt tempore eaque veritatis, eligendi totam fuga odit ut
-          voluptas alias!
-        </p>
-        <div class="">
-          <i class="ri-building-2-fill text-5xl "></i>
-          <i class="ri-home-2-fill w-5 h-6"></i>
-        </div>
-        <ul>
-          <each loop="product, index in products">
-            <li>{{product.name}} | {{product.description}}</li>
-          </each>
-        </ul>
-      </main>
+    <main class="grow">
+      <include src="intro.html"></include>
+      <include src="app.html"></include>
+      <include src="price.html"></include>
+      <include src="advantages.html"></include>
+      <!-- <include src="cosmetic.html"></include> -->
+    </main>
 
-      <footer>
-        <!-- <include src="html/footer.html"></include> -->
-      </footer>
-    </div>
-  </body>
+    <footer>
+      <!-- <include src="footer.html"></include> -->
+    </footer>
+  </div>
+</body>
+
 </html>

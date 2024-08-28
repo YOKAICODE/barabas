@@ -85,3 +85,31 @@
             format("svg"); /* iOS 4.1- */
     font-display: swap;
 }
+@font-face {
+    font-family: "DIN Condensed";
+    src: url("DINCondensed-Bold.eot");
+    src:
+        local("DIN Condensed Bold"),
+        local("DINCondensed-Bold"),
+        url("../assets/fonts/DINCondensed-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/DINCondensed-Bold.woff2") format("woff2"),
+        url("../assets/fonts/DINCondensed-Bold.woff") format("woff"),
+        url("../assets/fonts/DINCondensed-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Druk Text Wide Cyr";
+    src: url("DrukTextWideCyr-Heavy.eot");
+    src:
+        local("DrukTextWideCyr-Heavy"),
+        url("../assets/fonts/DrukTextWideCyr-Heavy.eot?#iefix") format("embedded-opentype"),
+        url("../assets/fonts/DrukTextWideCyr-Heavy.woff2") format("woff2"),
+        url("../assets/fonts/DrukTextWideCyr-Heavy.woff") format("woff"),
+        url("../assets/fonts/DrukTextWideCyr-Heavy.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

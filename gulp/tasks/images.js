@@ -34,8 +34,12 @@ const images = () => {
       )
     )
     .pipe(app.gulp.dest(app.path.build.images))
-    .pipe(app.gulp.src(app.path.src.svg, { removeBOM: false }))
-    .pipe(app.gulp.dest(app.path.build.images))
+
+    // The following tasks did not complete: default, <parallel>, images
+    // Did you forget to signal async completion?
+    // .pipe(app.gulp.src(app.path.src.svg, { removeBOM: false }))
+    // .pipe(app.gulp.dest(app.path.build.images))
+    
     .pipe(app.plugins.browsersync.stream());
 };
 
