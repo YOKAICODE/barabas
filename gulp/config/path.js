@@ -20,6 +20,7 @@ const path = {
       `!${srcFolder}/data/**/*.*`,
       `!${srcFolder}/assets/favicon/*.*`,
       `${srcFolder}/assets/icons/*.*`,
+      `${srcFolder}/assets/files/*.*`,
     ],
     tailwindcss: `${srcFolder}/tailwindcss/tailwind.css`,
     favicons: `${srcFolder}/assets/favicon/*.*`,
