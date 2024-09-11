@@ -1,0 +1,99 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown__button {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: left;
+
+    background: #000;
+    border: 1px solid #ffffff31;
+    border-radius: 6px;
+    height: 46px;
+
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 35px;
+
+    font-size: 18px;
+    line-height: 20px;
+
+    cursor: pointer;
+}
+
+.dropdown__button:focus,
+.dropdown__button--active {
+    outline: none;
+}
+
+.dropdown__button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+
+    /* Рисуем треугольник */
+    width: 0;
+    height: 0;
+    border-width: 10.4px 6px 0 6px;
+    border-color: #fff transparent transparent transparent;
+    border-style: solid;
+
+    /* Снимаем клик с треугольника */
+    pointer-events: none;
+}
+
+.dropdown__list {
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: 52px;
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    background: #000;
+    overflow: hidden;
+    border: 1px solid #ffffff31;
+    border-radius: 6px;
+    width: 100%;
+
+    z-index: 1;
+}
+
+.dropdown__list--visible {
+    display: block;
+}
+
+.dropdown__list-item {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 0px;
+    padding: 13px 20px;
+    cursor: pointer;
+}
+
+.dropdown__list-item:first-child {
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px solid #ffffff31;
+}
+
+.dropdown__list-item:last-child {
+    border-radius: 0 0 6px 6px;
+}
+
+.dropdown__list-item:hover {
+    background: #fff;
+    color: #000;
+}
+
+.dropdown__input-hidden {
+    display: none;
+}
