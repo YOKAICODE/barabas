@@ -25,13 +25,32 @@ const html = () => {
         postHtmlInclude({ encoding: "utf8", root: app.path.postHtmlRoot }),
         postHtmlExpression({
           locals: {
-            barberPrice: dataJson.barber.price,
-            barberSale: dataJson.barber.sale,
-            topPrice: dataJson.top.price,
-            topSale: dataJson.top.sale,
-            premiumPrice: dataJson.premium.price,
-            premiumSale: dataJson.premium.sale,
+            /* Ulsk */
+            ulBarberPrice: dataJson.ulsk.barber.price,
+            ulBarberSale: dataJson.ulsk.barber.sale,
+            ulTopPrice: dataJson.ulsk.top.price,
+            ulTopSale: dataJson.ulsk.top.sale,
+            ulPremiumPrice: dataJson.ulsk.premium.price,
+            ulPremiumSale: dataJson.ulsk.premium.sale,
+            /* Saransk */
+            saranskBarberPrice: dataJson.saransk.barber.price,
+            saranskBarberSale: dataJson.saransk.barber.sale,
+            saranskTopPrice: dataJson.saransk.top.price,
+            saranskTopSale: dataJson.saransk.top.sale,
+            saranskPremiumPrice: dataJson.saransk.premium.price,
+            saranskPremiumSale: dataJson.saransk.premium.sale,
+            /* Moscow */
+            moscowBarberPrice: dataJson.moscow.barber.price,
+            moscowBarberSale: dataJson.moscow.barber.sale,
+            moscowTopPrice: dataJson.moscow.top.price,
+            moscowTopSale: dataJson.moscow.top.sale,
+            moscowPremiumPrice: dataJson.moscow.premium.price,
+            moscowPremiumSale: dataJson.moscow.premium.sale,
+            /* Cosmetic */
             cosmetic: dataJson.cosmetic,
+
+            /* Other */
+            saransk: "Саранск",
           },
         }),
       ])

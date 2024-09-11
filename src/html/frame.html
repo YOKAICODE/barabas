@@ -1,9 +1,9 @@
 <aside class="fixed hidden top-0 left-0 w-full h-[100dvh] md:max-h-full bg-black bg-opacity-50 z-20 items-center justify-center" id="frame">
     <div class="w-full h-full max-w-screen-xl xl:max-h-[600px] flex flex-col">
         <header class="flex items-center justify-between bg-black">
-            <span class="font-druk text-lg px-3">Запись онлайн</span>
-            <button class="flex items-center p-3" id="closeFrame"><i class="ri-close-line text-2xl"></i></button>
+            <span class="px-3 text-lg font-druk">Запись онлайн</span>
+            <button class="flex items-center p-3" id="closeFrame"><i class="text-2xl ri-close-line"></i></button>
         </header>
-        <iframe src="//beauty.dikidi.net/ru/record/?widget=84815&amp;source=widget" frameborder="0" class="grow overflow-y-scroll"></iframe>
+        <iframe src="//beauty.dikidi.net/ru/record/?widget={{appLinkID}}&amp;source=widget" frameborder="0" class="overflow-y-scroll grow"></iframe>
     </div>
 </aside>
