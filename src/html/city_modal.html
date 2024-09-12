@@ -6,7 +6,14 @@
             <span class="px-3 text-lg uppercase font-druk">Сменить город</span>
             <button class="flex items-center p-3" id="closeCity"><i class="text-2xl ri-close-line"></i></button>
         </header>
-        <include src="select.html" locals='{}'></include>
+        <!-- Select -->
+        <div class="dropdown">
+            <button class="uppercase dropdown__button">Выберите город:</button>
+            <ul class="dropdown__list">
+                <li class="dropdown__list-item" data-value="{{data}}">{{city}}</li>
+            </ul>
+            <input type="text" name="select-category" value="" class="dropdown__input-hidden" id="selectCity">
+        </div>
     </div>
 </aside>
 

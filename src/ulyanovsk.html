@@ -33,8 +33,7 @@
 <body class="text-white bg-black">
   <!-- App Container -->
   <div class="flex flex-col min-h-screen">
-    <include src="header.html" locals='{"city": "Ульяновск"}'></include>     
-
+    <include src="header.html" locals='{"city": "Ульяновск"}'></include>
     <main class="space-y-10 grow">
       <include src="intro.html" locals='{"city": "Ульяновске"}'></include>
       <include src="app.html"></include>
@@ -43,14 +42,13 @@
       <include src="cosmetic.html"></include>
       <include src="ul_contacts.html"></include>
     </main>
-
-    <include src="footer.html"></include>
+    <include src="footer.html" locals='{"instagramLink":"","vkLink":"https://vk.com/barberbarabas"}'></include>
   </div>
 
-  <include src="sidebar.html"></include>
+  <include src="sidebar.html" locals='{"instagramLink":"","vkLink":"https://vk.com/barberbarabas"}'></include>
   <include src="pulse_button.html"></include>
-  <include src="frame.html" locals='{"appLinkID": "84815"}'></include>
-  <include src="city_modal.html" locals='{}'></include>
+  <include src="frame.html" locals='{"appLink": "https://beauty.dikidi.net/ru/record/?widget=84815"}'></include>
+  <include src="city_modal.html" locals='{"city": "Саранск","data":"saransk"}'></include>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 // Offset Page Scroll
-const navList = document.querySelectorAll(".header-link");
+const navList = document.querySelectorAll(".ancor-link");
 const HEADER_HEIGHT = document.querySelector("header").offsetHeight;
 
 navList.forEach((link) => {
