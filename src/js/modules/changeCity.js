@@ -6,8 +6,7 @@ const selectCityEl = document.querySelector("#selectCity");
 
 const setCity = (city) => {
   // Устанавливаем куку и перезагружаем страницу
-  document.cookie = "city=" + city + ";max-age='3600';path=/";
-  location.reload();
+  location.assign(`choose-city.php?city=${city}`)
 };
 
 const checkOfside = (e) => {
